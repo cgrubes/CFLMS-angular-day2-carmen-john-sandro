@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  
   constructor() { }
 
+ 
   cars = [
     {
       brand: "Toyota",
@@ -19,8 +21,8 @@ export class HomeComponent implements OnInit {
       type: "Golf"
     },
     {
-      brand: "Lamborghini",
-      type: "Countach"
+      brand: "Lambourghini",
+      type: "Countache"
     },
   ]
 

@@ -1,1 +1,32 @@
-<p>contact works!</p>
+<form [formGroup]="info" (ngSubmit)="onSubmit()">
+ 
+    <label>
+      First Name:
+      <input type="text" formControlName="firstName">
+    </label>
+   
+    <label>
+      Last Name:
+      <input type="text" formControlName="lastName">
+    </label>
+   
+    <label>
+      Age:
+      <input type="text" formControlName="age">
+    </label>
+   
+    <label>
+      Email:
+      <input type="text" formControlName="email">
+    </label>
+    
+    <input type="submit" class="btn btn-primary" value="Submit">
+   
+   </form>
+
+   <div *ngFor="let d of arr_data">
+       <ul>
+            <li>{{d.firstName}}</li>
+            <li>{{d.lastName}}</li>
+        </ul>
+    </div>
